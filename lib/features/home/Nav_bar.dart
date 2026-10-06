@@ -10,7 +10,7 @@ class NavBar extends StatefulWidget {
 }
 int currentindex=0;
 List<Widget> screens=[
-HomeScreen(),SearchScreen(),SearchScreen()
+HomeScreen(),SearchScreen()
 ];
 
 class _NavBarState extends State<NavBar> {
@@ -36,7 +36,6 @@ class _NavBarState extends State<NavBar> {
         items: [
         Icon(Icons.home,color: Colors.white,size: 26,),
         Icon(Icons.search,color: Colors.white,size: 26,),
-        Icon(Icons.save,color: Colors.white,size: 26,),
       ],) ,
 
       body: screens[currentindex],

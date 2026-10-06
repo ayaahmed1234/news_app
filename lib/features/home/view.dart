@@ -64,45 +64,48 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadiusGeometry.all(Radius.circular(12)),
                 child: Image.asset("assets/images/home.png"),
               ),
-              SizedBox(
-                height: 40,
-                child: ListView.builder(
-                  itemCount: categories.length,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    bool isselected = index == selectdindex;
-                    return GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          selectdindex = index;
-                        });
-                        if(categories[index]=="All"){
-                          context.read<HomeCubit>().GetArticles();
-                        }
-                        else{
-                          context.read<HomeCubit>().Search(query: categories[index]);
-                        }
-                      },
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SizedBox(
+                  height: 40,
+                  child: ListView.builder(
+                    itemCount: categories.length,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      bool isselected = index == selectdindex;
+                      return GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            selectdindex = index;
+                          });
+                          if(categories[index]=="All"){
+                            context.read<HomeCubit>().GetArticles();
+                          }
+                          else{
+                            context.read<HomeCubit>().Search(query: categories[index]);
+                          }
+                        },
 
-                      child: Container(
-                        // width: 388.00000316461296,
-                        // height: 39,
-                        margin: EdgeInsets.symmetric(horizontal: 10),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black, width: 1),
-                          color: isselected ? Color(0xffFFA500) : Colors.white,
-                          borderRadius: BorderRadius.circular(32),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            categories[index],
-                            style: AppTextStyle.black_400_16,
+                        child: Container(
+                          // width: 388.00000316461296,
+                          // height: 39,
+                          margin: EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 1),
+                            color: isselected ? Color(0xffFFA500) : Colors.white,
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              categories[index],
+                              style: AppTextStyle.black_400_16,
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
               ),
 

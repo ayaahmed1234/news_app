@@ -48,9 +48,9 @@ final ArticleModel model;
               ),
             )
 
-            ,Text(model.description??"",style: AppTextStyle.black_600_16,),
+            ,Text(model.description??"",style: AppTextStyle.black_600_12,),
             SizedBox(height: 12,),
-            Text(model.content??"",style:AppTextStyle.grey_600_10)
+            Text(model.content??"",style:AppTextStyle.black_600_12)
           ],
         ),
       ),
