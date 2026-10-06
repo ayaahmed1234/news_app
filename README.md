@@ -126,6 +126,9 @@ A short demo showcasing the main application flow:
 
 ![Splash Screen](screenshots/details2.png)
 
+## 🎬 Demo
+
+![App Demo](demo/demo.mp4)
 ## 🚀 Getting Started
 
 ### Prerequisites
