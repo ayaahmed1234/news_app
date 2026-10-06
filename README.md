@@ -105,27 +105,30 @@ A short demo showcasing the main application flow:
 
 ### Splash Screen
 
-![Splash Screen](assets/screenshots/splash.png)
+![Splash Screen](screenshots/splash.png)
 
 ### Home Screen
 
-![Splash Screen](assets/screenshots/home.png)
+![Splash Screen](screenshots/home.png)
 
 
 ### Search Screen
-![Splash Screen](assets/screenshots/search.png)
+![Splash Screen](screenshots/search.png)
 
 ### Search Results
 
-![Splash Screen](assets/screenshots/searchresults.png)
+![Splash Screen](screenshots/searchresults.png)
 
 ### News Details
 
-![Splash Screen](assets/screenshots/details.png)
+![Splash Screen](screenshots/details.png)
 ### News Details
 
-![Splash Screen](assets/screenshots/details2.png)
+![Splash Screen](screenshots/details2.png)
 
+## 🎬 Demo
+
+![App Demo](demo/demo.mp4)
 ## 🚀 Getting Started
 
 ### Prerequisites
