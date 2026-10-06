@@ -124,7 +124,7 @@ A short demo showcasing the main application flow:
 ![Splash Screen](screenshots/details.png)
 ### News Details
 
-![Splash Screen](screenshots/details (2).png)
+![Splash Screen](screenshots/detail.png)
 
 ## 🎬 Demo
 
