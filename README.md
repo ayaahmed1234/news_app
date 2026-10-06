@@ -128,7 +128,7 @@ A short demo showcasing the main application flow:
 
 ## 🎬 Demo
 
-![App Demo](demo/demo.mp4)
+![App Demo](demo/demo.gif)
 ## 🚀 Getting Started
 
 ### Prerequisites
